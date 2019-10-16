@@ -1,143 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <head>
-<link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Caveat Brush';font-size: 22px;
-  background-image: url("https://user-images.githubusercontent.com/54993790/66947580-6d681400-f053-11e9-98b1-0fb1a2acc305.jpg");
-  background-repeat: no-repeat;
-  background-size: auto auto;
-  background-position:150px 65px;
-  background-color: #F1EAE9;
+<!DOCTYPE html>	
+	<html lang="en">
+	<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<head>
+	<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+	<style>
+	body {
+	font-family: 'Architects Daughter';font-size: 22px;
+	background-image: url("https://user-images.githubusercontent.com/54993790/66947580-6d681400-f053-11e9-98b1-0fb1a2acc305.jpg");
+	background-repeat: no-repeat;
+	background-size: auto auto;
+	background-position:150px 65px;
+	background-color: #F1EAE9;
+	}
+    
+    .grid-container {
+  display: grid;
+  grid-template-areas:
+    'itemx itemy';
 }
-        
-                * {
-  box-sizing: border-box;
-                }
-    .header
-                {
-                background-color: white;
-                }
-                
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #f7f4f0;
-}
+	
+	* {
+	box-sizing: border-box;
+	}
+	.header
+	{
+	background-color: white;
+	}
+	
+	ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f7f4f0;
+	}
+	
+	li {
+	float: left;
+	}
+	
+	li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+	}
+	
+	li a:hover {
+	background-color: #D8D4CF;
+	}
+	
+	.main
+	{
+	
+	
+	color: black;
+	padding: 0px
+	}
+	
+	div {
+	margin-top: 30px;
+	margin-left: 30px;
+	
+	}
+	
+	
+	.button {
+	background-color: #f44336;
+	border: none;
+	color: white;
+	padding: 15px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+	}
+	
+	.button2 {
+	background-color: #6c9df0;
+	border: none;
+	color: white;
+	padding: 15px;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	}
+	
+	
+	
+	
+	</style>
+	</head>
+	<body>
+	<header>
+    
+    <div class="grid-container">
+    
+	<div class="itemx">
+    
+    <img src="https://www.freelogodesign.org/file/app/client/thumb/d1d69040-bca5-42d5-8f5f-be9737c47d72_200x200.png?1570648129206" alt="Logotyp pizzor">
+    
+    </div>
+	
+  <div class="itemy">
+  	
+    <button onclick="myFunction()" class="button">Veckans Erbjudande</button>
+	<p id="demo"></p>
+	<script>
+	function myFunction() {
+	document.getElementById("demo").innerHTML = "Hawaii inkl. valfri sås 75:-";
+	}
+	</script>
+    
+    </div>
+      
+    </div>
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #D8D4CF;
-}
-                
-                .main
-                {
-                  
-         
-                        color: black;
-                        padding: 0px
-                }
-  
-  div {
-  margin-top: 30px;
-  margin-left: 30px;
-  
-}
-                
-                
-   .button {
-  background-color: #f44336;
-  border: none;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  float: right;
-}
-
-             .button2 {
-  background-color: #6c9df0;
-  border: none;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-                
-
-
-                
-                </style>
-</head>
-<body>
-<header>
-       <img src="https://www.freelogodesign.org/file/app/client/thumb/d1d69040-bca5-42d5-8f5f-be9737c47d72_200x200.png?1570648129206" alt="Logotyp pizzor">
-        
-<button onclick="myFunction()" class="button">Veckans Erbjudande</button>
-<p id="demo"></p>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hawaii inkl. valfri sås 75:-";
-}
-</script>
-        
-        
- </header>
-  
-  <ul>
-                  <li><a href="#">Meny</a></li>
-                  <li><a href="#">Om Oss</a></li>
-                  <li><a href="#">Kontakt</a></li>
-                </ul>
-
- 
-        
-        <div class="main">
-  <div>           
-  <h3>NISSES PIZZERIA</h3>
-                <h2>AVSLUTA DAGEN MED EN AV VÅRA RIKTIGT GODA PIZZOR</h2>
-                <br>
-                
-                        <h4>Öppet</h4>
-                 <p>
-                 Måndag-Fredag 12-23
-                 Lördag-Söndag 13-22
-                </p>
-                 
-              
-             <a href="#" class="button button2">Gå till vår FaceBook</a>             
-</div>
-          <div/>
-        
-        
-</body>
-</html>
+	
+	
+	</header>
+	
+	<ul>
+	<li><a href="#">Meny</a></li>
+	<li><a href="#">Om Oss</a></li>
+	<li><a href="#">Kontakt</a></li>
+	</ul>
+	
+	
+	
+	<div class="main">
+	<div>
+	<h2>NISSES PIZZERIA</h2>
+	<h1>AVSLUTA DAGEN MED EN AV VÅRA RIKTIGT GODA PIZZOR</h1>
+	<br>
+	
+	<h3>Öppet</h3>
+	<p>
+	Måndag-Fredag 12-23
+	Lördag-Söndag 13-22
+	</p>
+	
+	
+	<a href="#" class="button button2">Gå till vår FaceBook</a>
+	</div>
+	<div/>
+	
+	
+	</body>
+	</html>
