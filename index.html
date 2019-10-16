@@ -19,10 +19,16 @@
     
     .grid-container {
   display: grid;
-  grid-template-areas:
-    'itemx itemy';
+   grid-template-columns: auto auto auto auto;
 }
-	
+
+		
+	.itemx {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}	
+		
+		
 	* {
 	box-sizing: border-box;
 	}
